@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      <link rel="icon" href="/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.20">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+    
+      <link rel="stylesheet" href="../../css/timeago.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ETEP887XGG"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ETEP887XGG",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ETEP887XGG",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="../../css/megaport-md-theme.css">
+<link rel="stylesheet" href="../../css/megaport.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+<!--  <link rel="stylesheet" href="../../css/pdf.css">
+<link rel="stylesheet" href="../../css/prod-main.css"> -->
+
+<!-- OneTrust Cookies Consent Notice start for megaport.com -->
+<script src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
+  data-domain-script="bb9601db-928e-476f-a758-86f84821fc3d"></script>
+<script type="text/javascript">
+  function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for megaport.com -->
+
+<!-- Add Segment's OneTrust Consent Wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/@segment/analytics-consent-wrapper-onetrust@latest/dist/umd/analytics-onetrust.umd.js"></script>
+<script>
+  !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="tlBnFh825sUrWlF6YUzQatsLEmMBKeqR";;analytics.SNIPPET_VERSION="5.2.0";
+  withOneTrust(analytics).load("tlBnFh825sUrWlF6YUzQatsLEmMBKeqR");
+  }}();
+  // Check if appropriate cookie constent has been opted into before page view
+  analytics.ready(function() {
+    if(window.OnetrustActiveGroups && window.OnetrustActiveGroups.includes('C0004')) {
+      analytics.page('docs', document.title);;
+    } else {…};
+  });
+</script>
+
+
+<!-- i18n redirect check -->
+<script type="text/javascript" src="../../js/i18n.js" defer></script>
+
+<!-- Google Tag Manager -->
+<script>
+  if (window.location.hostname.includes('megaport')) {
+    (function (w, d, s, l, i) {
+    })(window, document, 'script', 'dataLayer', 'GTM-TTXXGC')
+  }
+</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Open Graph -->
+
+
+
+
+
+
+
+
+<meta property="og:title" content="This help topic describes how to create a Port in the Megaport network.">
+<meta property="og:url" content="https://docs.megaport.com/connections/creating-port/">
+<meta property="og:type" content="article">
+
+<meta property="og:description" content="Megaport Documentation">
+<meta property="og:image" content="https://media.megaport.com/marketing/og-image.png">
+<meta property="og:image:alt" content="Megaport Docs">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Megaport Documentation" class="md-header__button md-logo" aria-label="Megaport Documentation" data-md-component="logo">
+      
+<img src="/images/megaport-logo-large.png" alt="Megaport Docs" />
+
+
+
+    </a>
+
+      <div class="visit-main-site">
+    </div>
+  </nav>
+
+
+  <div class="title-and-search-bar">
+    <div class="md-header__inner md-grid">
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+    <div class="md-search__output">
+    </div>
+  </div>
+</div>
+      
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+</header>
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+<!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Introducing Megaport
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Setting Up a Megaport Account
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Creating an Account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Enforcing Multi-Factor Authentication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Setting up Single Sign-On
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Inviting Users to Your Account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Providing Support Contact Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Setting Up Financial Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Modifying a Company Profile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Resetting Your Password
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Logging in to the Megaport Portal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Managing Your User Profile
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Megaport Portal Dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Understanding the Services Page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Understanding Locations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Partner Managed Accounts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Technical Specifications
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Deployment Scenarios
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Common Connectivity Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Common Multicloud Connectivity Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Modernizing Your MPLS Network with Megaport Solutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Managing Connectivity with Megaport's APIs as a Service Provider
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Encryption
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Using Encryption with Megaport Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    MACsec
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    IPsec
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Cloud Native VPN Encryption
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <span class="md-ellipsis">
+    Ports
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+  
+    <li class="md-nav__item md-nav__item--active">
+  
+  <span class="md-ellipsis">
+    Creating a Port
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Ordering a Cross Connect
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Port Diversity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Link Aggregation Groups
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Creating a LAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Adding a Port to a LAG
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Terminating a Port
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Connections (VXC)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Creating a Private VXC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Moving VXCs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Setting up Service Keys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Creating a Connection using a Service Key
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Configuring Q-in-Q
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Changing the Speed of a Termed VXC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Shutting Down a VXC for Failover Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Terminating a VXC
+  </span>
+  
+
+      </a>
+    </li>
+    </li>
+  
+
+    
+      
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+  <span class="md-ellipsis">
+    Megaport Internet
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+  
+    <li class="md-nav__item">
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  </nav>
+</li>
+</ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<nav class="md-nav md-nav--secondary" aria-label="On This Page">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+                
+  <div class="header-container">
+  </div>
+  
+  
+                  
+
+
+<h1 id="creating-a-port">Creating a Port</h1>
+<p>This topic describes how to create a <span class="tooltip">Port<span class="tooltiptext">A Port is the high-speed Ethernet interface that connects to Megaport's global software-defined network (SDN). Ports are available in 1 Gbps, 10 Gbps and 100 Gbps speed options.<br></span></span> in the Megaport network. Your organization's Port is the physical point of connection between your organization's network and the Megaport network. You will need to deploy a Port wherever you want to direct traffic. </p>
+<p>The Megaport Portal steps you through selecting a data center location, specifying the Port details, and placing the order. To connect, you can start with a single data center location; however, we recommend selecting two different locations to provide redundancy.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding, ensure that you have set up your Megaport Portal account. For more information, see <a href="../../setting-up/">Setting Up a Megaport Account</a>.</p>
+</div>
+<p><strong>To create a new Port</strong></p>
+<ol>
+<li>In the <a href="https://portal.megaport.com" target="_blank">Megaport Portal</a>, go to the <strong>Services</strong> page.</li>
+<li>Click <strong>Create Port</strong>.<br />
+<img alt="Create Port" class="shadow" src="../img/create_port_button.png" width="250px" />  </li>
+<li>
+<p>Select your preferred data center location and click <strong>Next</strong>.<br />
+You can use the <strong>Search</strong> field to find the Port name, Country, Metro City, or address of your destination Port. 
+<img alt="Select location" class="shadow" src="../img/create_port_select_location.png" width="350px" /> </p>
+</li>
+<li>
+<p>Specify the Port details.  </p>
+<ul>
+<li>
+<p><strong>Port Speed</strong> &ndash; Select 1 Gbps or 10 Gbps from the Port Speed drop-down list (100 Gbps is available in some locations). Ensure that your equipment is capable of interfacing with the selected speed.</p>
+</li>
+<li>
+<p><strong>Port Name</strong> &ndash; Specify a name for the Port that is easily identifiable, particularly if you plan on having more than one Port.  </p>
+</li>
+<li>
+<p><strong>Megaport Marketplace</strong> &ndash; By default, each service is private to your enterprise and consumes services from the Megaport network for your own internal company, team, and resources. When set to private, the service is not searchable in the Megaport Marketplace, however, others can still connect to you using a <a href="../../marketplace/service-keys/">service key</a>. Megaport Marketplace visibility is controlled on your Megaport Marketplace profile. For more information about how to make your service visible to the Megaport Marketplace, see <a href="../../marketplace/profile/#adding-services-to-your-profile">Adding services to your profile</a>.</p>
+</li>
+<li>
+<p><strong>Service Level Reference</strong> (optional) &ndash; Specify a unique identifying number for the Port to be used for billing purposes, such as a cost center number or a unique customer ID. The service level reference number appears for each service under the Product section of the invoice. You can also edit this field for an existing service. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A VXC associated with the Port is not automatically updated with the Port service level reference number.  </p>
+</div>
+</li>
+<li>
+<p><strong>Minimum Term</strong> &ndash; Select No Minimum Term, 12 Months, 24 Months, or 36 Months. Longer terms result in a lower monthly rate. <em>12 Months</em> is selected by default. Take note of the information on the screen to avoid early termination fees (ETF). </p>
+<p>Enable the <a href="/portal-admin/auto-renew/#auto-renew">Minimum Term Renewal</a> option for services with a 12, 24, or 36-month term to automatically renew the contract at the same discounted price and term length at the end of the contract. If you don&rsquo;t renew the contract, at the end of the term,  the contract will automatically roll over to month-to-month contract for the following billing period, at the same price, without term discounts.   </p>
+<p>For more information, see <a href="../../finance/port-pricing/">Port Pricing and Contract Terms</a>. </p>
+</li>
+<li>
+<p><strong>Cross Connect</strong> &ndash; When you have entered a Port speed, the <span class="tooltip">Cross Connect<span class="tooltiptext">A Cross Connect is a dedicated physical point-to-point connection that links two parties within a data centre.
+It is a non-standard product and can only be ordered with a Port. <br></span></span> section will appear if Cross Connect is available at your chosen location. 
+Select <strong>Yes</strong> if you want to include a Cross Connect with your Port order. The price for the Cross Connect will be shown. 
+For more information, see  <a href="../cross-connect/">Ordering a Cross Connect</a>.</p>
+</li>
+<li>
+<p><strong>Port Diversity</strong> &ndash; Select a diversity option from the drop-down list. You can create two diverse Ports or choose an existing Port for the new Port to be diverse from. For more information  configuring Port diversity, see <a href="../port-diversity/">Port Diversity</a>.</p>
+</li>
+<li>
+<p><strong>LACP on Port</strong> &ndash; Click <strong>Enable</strong> if you want the Port to be a member of a LAG. To enable LACP, the Port speed must be 10 Gbps or higher. Specify the number of Ports to include in the LAG, up to a maximum of 8. For more information about LAG, see <a href="../lag/">Creating a Link Aggregation Group</a>.</p>
+</li>
+<li>
+<p><strong>Resource Tags</strong> &ndash; You can use resource tags to add your own reference metadata to a Megaport service.<br />
+To add a tag: </p>
+<ol>
+<li>Click <strong>Add Tags</strong>. </li>
+<li>Click  <strong>Add New Tag</strong>.  </li>
+<li>Enter details into the fields:  <ul>
+<li><strong>Key</strong> - string maximum length 128. Valid values are a-z 0-9 _ : . / \ -  </li>
+<li><strong>Value</strong> - string maximum length 256. Valid values are a-z A-Z 0-9 _ : . @ / + \ - (space)   </li>
+</ul>
+</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p>If you already have resource tags for that service, you can manage them by clicking <strong>Manage Tags</strong>. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Never include sensitive information in a resource tag. Sensitive information includes commands that return existing tag definitions and information that will identify a person or company.</p>
+</div>
+</li>
+</ul>
+<p>The price updates dynamically based on your selections. Note that some partner-managed accounts do not display the pricing details.</p>
+<p><img alt="Create Port details" class="shadow" src="../img/create-port-configure.png" width="500px" />  </p>
+</li>
+<li>
+<p>Click <strong>Next</strong> to view the Summary page.<br />
+<img alt="Create Port summary" class="shadow" src="../img/create-port-summary.png" width="500px" />  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have chosen to add a Cross Connect, you will see the Cross Connect monthly charges displayed in the pricing. </p>
+</div>
+</li>
+<li>
+<p>Confirm the selected options and click <strong>Add Port</strong>. 
+    <!-- <img alt="Configured services" src="img/create-port-configured-services.png" />{: class="shadow" width="250px"} --><br />
+    The newly created Port(s) and their monthly charges appear under Configured Services, ready for you to add a connection. If you create a service in a market that isn&rsquo;t enabled, you are prompted to enable it first. </p>
+</li>
+<li>
+<p>Click <strong>Order</strong> to deploy the new Port(s) now, or click <strong>Save</strong> to save the configured services before placing the order. </p>
+</li>
+<li>
+<p>Click <strong>Order Now</strong> on the pop-up window to initiate the provisioning of your new Port.<br />
+    <!--<img alt="Order services" src="img/create-port-order-services.png" />{: class="shadow" width="550px"} -->
+    In most cases the Port is provisioned immediately, but sometimes it can take longer. After the Port is provisioned, Megaport generates a Letter of Authorization (LOA) specifying the demarcation point to be applied to your service. A PDF of the LOA is sent to you by email.   </p>
+</li>
+<li>
+<p>Click the <strong>Download LOA</strong> link next to the new Port on the Services page.<br />
+   The <strong>Download LOA</strong> link appears once the Port is available. For more information about the LOA, see <a href="../../portal-admin/loa/">Megaport Letter of Authorization</a>.   </p>
+</li>
+<li>
+<p>Provide the LOA to your data center operator to establish the physical cross connect from your network device to your new Port.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The cost of a new cross connection and any related VXC fees are the responsibility of the customer, as outlined in <a href="https://www.megaport.com/legal/global-services-agreement/" target="_blank">Megaport&rsquo;s Global Services Agreement</a>.</p>
+</div>
+<p>Once the Port has been provisioned and deployed, you have access to the Megaport network and can start adding Virtual Cross Connects (VXCs) to the Port. For more information about adding VXCs, see <a href="../#create_vxc">Creating a VXC</a>.</p>
