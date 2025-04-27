@@ -47,7 +47,7 @@ defmodule HtmlToMarkdown.MixProject do
       # For handling HTML entities
       {:html_entities, "~> 0.5"},
       # For URL parsing and manipulation
-      {:uri_query, "~> 0.1.2"},
+      {:uri_query, "~> 0.2.0"},
       # For documentation
       {:ex_doc, "~> 0.29", only: :dev, runtime: false},
       # For static code analysis
